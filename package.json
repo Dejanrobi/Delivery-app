@@ -6,11 +6,11 @@
   "scripts": {
     "serve": "firebase emulators:start",
     "deploy": "firebase deploy --only hosting",
-    "dev": "npm dev",
-    "build": "npm build && npm export",
+    "dev": "npm run dev",
+    "build": "npm run build && npm run export",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start",
-    "lint": "npm lint"
+    "start": "npm run  start",
+    "lint": "npm run lint"
   },
   "keywords": [],
   "author": "",
