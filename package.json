@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
-    "build": "webpack --config=Scripts/config/webpack.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "firebase emulators:start",
+    "deploy": "firebase deploy --only hosting",
+    "dev": "npm dev",
+    "build": "npm build && npm export",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start",
+    "lint": "npm lint"
   },
   "keywords": [],
   "author": "",
